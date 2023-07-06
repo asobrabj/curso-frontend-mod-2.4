@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.img{
+    width: 100px;
+        display: flex;
+        justify-content: center;
+    margin: 0 auto;
+}
+
+.d_forms{
+    margin-top: 20px;
+    
+}
+
+.loading {
+  display: none;
+  width: 20px;
+  text-align: center;
+  margin-top: 25px;
+  
+}

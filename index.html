@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/formas.png">
+    <link href="./style/custom.css" rel="stylesheet">
+    <title>HTML Formulário</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="d_forms">
+            <img class="img" src="./images/img1.jpg" alt="forms">
+            <h1>HTML Formulário</h1>
+            <form action="" id="formulario">
+                <label for="lname">Nome:</label>
+                <input type="text" id="lnome" name="lname" required placeholder="digite seu nome" SIZE=30 MAXLENGTH=30><br><br>
+                <label for="lname">Endereço:</label>
+                <input type="text" id="lende" name="lende" required placeholder="digite seu enredeço" SIZE=27 MAXLENGTH=30><br><br>
+                <label for="lname">Bairro:</label>
+                <input type="text" id="lbair" name="lbair" required placeholder="digite seu bairro" SIZE=30 MAXLENGTH=30><br><br>
+                <label for="lname">Cidade:</label>
+                <input type="text" id="lcida" name="lcida" required placeholder="digite sua cidade" SIZE=30 MAXLENGTH=30><br><br>
+                <label for="lname">Celular:</label>
+                <input type="number" id="lcel" name="lcel" required placeholder="digite seu celular" SIZE=30 MAXLENGTH=30><br><br>
+                <button type="submit" onclick="processar()">Enviar</button>
+            </form>
+        </div>
+
+        <div id="loading" class="loading">
+            <img id="loadingImg" src="./images/ZZ5H.gif" alt="carregando" width="80px">
+            <p id="carrega">Carregando...</p>
+        </div>
+        <div id="lista" style="margin-top: 150px;  width: 200px;">
+            
+        </div>
+
+    </div>
+
+<script src="./js/custom.js"></script>
+
+</body>
+
+</html>
