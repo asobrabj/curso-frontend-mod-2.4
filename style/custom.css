@@ -1,18 +1,17 @@
 .container{
-    display: flex;
+    display: flex;   
     justify-content: center;
 
 }
 .img{
     width: 100px;
-        display: flex;
-        justify-content: center;
-    margin: 0 auto;
+    display: flex;    
 }
 
 .d_forms{
     margin-top: 20px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .loading {
@@ -21,4 +20,11 @@
   text-align: center;
   margin-top: 25px;
   
+}
+
+@media (max-width: 600px){
+    .container{
+        display: block;      
+    }   
+    
 }

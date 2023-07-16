@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desabilitar temporariamente o botão de envio</title>
+</head>
+<body>
+  <form id="myForm">
+    <!-- Campos do formulário aqui -->
+
+    <input type="submit" id="submitButton" value="Enviar">
+  </form>
+
+  <script>
+    var form = document.getElementById("myForm");
+    var submitButton = document.getElementById("submitButton");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita o comportamento padrão de recarregar a página
+
+      submitButton.disabled = true; // Desabilita o botão de envio
+      // Aqui você pode realizar qualquer processamento adicional necessário
+
+      // Exemplo: Simulando um atraso de 3 segundos antes de reabilitar o botão
+      setTimeout(function() {
+        submitButton.disabled = false; // Reabilita o botão de envio após o atraso
+        form.reset(); // Opcional: Redefine o formulário após o envio
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
