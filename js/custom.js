@@ -28,8 +28,8 @@ document.getElementById("formulario").addEventListener("submit", function (event
     for (let i = 0; i < lista.length; i++) {
 
       for (let x = 0; x < 5; x++) {
-
-        document.getElementById("lista").innerHTML += "<span>" + i + ' ' + lista[i][x] + "</span><br>";
+        var ii = i + 1;
+        document.getElementById("lista").innerHTML += "<span>" + ii + ' ' + lista[i][x] + "</span><br>";
 
       }
       document.getElementById("lista").innerHTML += '<p></p>';
